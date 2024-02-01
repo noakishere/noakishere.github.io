@@ -98,6 +98,10 @@ a {
 	padding: 20px;
 }
 
+.item h3 {
+	text-align: center;
+}
+
 /* Single work page */
 
 .single-work-container {

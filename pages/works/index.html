@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="../../src/css/main.css" />
+
+		<script src="https://unpkg.com/hydra-synth"></script>
+		<title>Works | Kamyar Karimi - Computation Arts Portfolio 2022</title>
+	</head>
+	<body>
+		<div class="container2">
+			<a href="../../index.html"><h1>&lt; home</h1></a>
+			<div class="works-container">
+				<div class="item">
+					<a href="../pages/works/meanwhile.html">
+						<!-- <img class="avatar" src="../assets/works-images/meanwhile-thumbnail.png" alt="" /> -->
+						<canvas class="avatar" id="myCanvas" width="400px" height="400px"></canvas>
+						<h3>games</h3>
+					</a>
+				</div>
+				<div class="item">
+					<a href="../pages/works/wake-me-up.html">
+						<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
+						<h3>sound</h3>
+						<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
+					</a>
+				</div>
+				<div class="item">
+					<a href="../pages/works/slimeboy.html">
+						<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+						<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
+						<h3>web</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener("mousemove", function (e) {
+				mouse.x = e.clientX;
+				mouse.y = e.clientY;
+			});
+
+			var hydra = new Hydra({
+				canvas: document.getElementById("myCanvas"),
+				detectAudio: false,
+			});
+
+			voronoi(50, 0.2, 10).modulateKaleid(noise(1, 0.01, 500), 0.01).kaleid().out(o0);
+
+			var hydra2 = new Hydra({
+				canvas: document.getElementById("myCanvas2"),
+				detectAudio: false,
+			});
+
+			voronoi(500, 0.2, 1).modulateKaleid(noise(1, 0.01, 5), 0.01).out(o0);
+
+			var hydra3 = new Hydra({
+				canvas: document.getElementById("myCanvas3"),
+				detectAudio: false,
+			});
+
+			voronoi(20, 0.2, 10).modulateKaleid(noise(1, 0.01, 5), 0.01).out(o0);
+		</script>
+	</body>
+</html>
