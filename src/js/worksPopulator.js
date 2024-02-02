@@ -1,6 +1,8 @@
 let allData;
 
 let container = document.querySelector(".category-items");
+let categories = document.querySelector(".categories");
+let returnBtn = document.getElementById("returnCat");
 
 addEventListener("DOMContentLoaded", (event) => {
 	fetch("../../assets/data/data.json")
@@ -19,6 +21,8 @@ function populateItems(category) {
 	var items = Object.entries(Object.values(allData)[category]);
 
 	container.innerHTML = "";
+	returnBtn.style.display = "block";
+	categories.style.display = "none";
 
 	console.log(items);
 	if (items != null) {
@@ -37,8 +41,12 @@ function populateItems(category) {
 			workElement.appendChild(workTitle);
 
 			container.appendChild(workElement);
-
-			console.log(element[1].title);
 		});
 	}
+}
+
+function showCategories() {
+	container.innerHTML = "";
+	returnBtn.style.display = "none";
+	categories.style.display = "grid";
 }

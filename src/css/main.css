@@ -62,6 +62,11 @@ a {
 	color: #d4125b;
 }
 
+.item:hover {
+	color: #d4125b;
+	cursor: pointer;
+}
+
 .avatar {
 	align-items: center;
 	justify-content: center;
@@ -98,7 +103,7 @@ a {
 	display: grid;
 	align-content: center;
 	justify-content: center;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 	margin-bottom: 3%;
 }
 
@@ -181,6 +186,11 @@ a {
 
 .slash-color {
 	color: #d4125b;
+}
+
+#returnCat:hover {
+	color: #d4125b;
+	cursor: pointer;
 }
 
 /* Table of contents page */

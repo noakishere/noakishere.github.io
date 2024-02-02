@@ -47,11 +47,21 @@
 					<div class="item">
 						<a href="../pages/works/slimeboy.html">
 							<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+							<canvas class="avatar" id="myCanvas4" width="400px" height="400px"></canvas>
+							<h3>installations</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="../pages/works/slimeboy.html">
+							<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
 							<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
 							<h3>web</h3>
 						</a>
 					</div>
 				</div>
+				<span id="returnCat" style="display: none" onclick="showCategories()"
+					><h5>&lt; return</h5></span
+				>
 				<div class="category-items"></div>
 			</div>
 		</div>
@@ -83,6 +93,16 @@
 			});
 
 			voronoi(20, 0.2, 10).modulateKaleid(noise(1, 0.01, 5), 0.01).out(o0);
+
+			var hydra3 = new Hydra({
+				canvas: document.getElementById("myCanvas4"),
+				detectAudio: false,
+			});
+
+			voronoi(20, 0.2, 10)
+				.modulateKaleid(noise(15, 0.01, 5), 0.01)
+				.contrast(() => Math.sin(time) * 5)
+				.out(o0);
 		</script>
 	</body>
 </html>
