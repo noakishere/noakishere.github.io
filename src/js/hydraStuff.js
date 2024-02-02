@@ -20,7 +20,7 @@ document.addEventListener("mousemove", function (e) {
 });
 
 function draw() {
-	voronoi(500, 0.2, 10)
+	voronoi(500, 0.2, 8)
 		.color(10, 1, mouse.x / 5)
 		.brightness(mouse.x / 2000)
 		.kaleid()
@@ -28,7 +28,7 @@ function draw() {
 
 	// gradient(o0).r().out(o1);
 
-	console.log(mouse.x);
+	// console.log(mouse.x);
 	requestAnimationFrame(draw);
 }
 

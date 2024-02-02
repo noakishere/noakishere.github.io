@@ -29,30 +29,34 @@
 		<div class="container2">
 			<a href="../../index.html"><h1>&lt; home</h1></a>
 			<div class="works-container">
-				<div class="item">
-					<a href="../pages/works/meanwhile.html">
+				<div class="categories">
+					<div onclick="populateItems(0)" class="item">
+						<!-- <a href="./items.html"> -->
 						<!-- <img class="avatar" src="../assets/works-images/meanwhile-thumbnail.png" alt="" /> -->
 						<canvas class="avatar" id="myCanvas" width="400px" height="400px"></canvas>
 						<h3>games</h3>
-					</a>
+						<!-- </a> -->
+					</div>
+					<div class="item">
+						<a href="../pages/works/wake-me-up.html">
+							<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
+							<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
+							<h3>sound</h3>
+						</a>
+					</div>
+					<div class="item">
+						<a href="../pages/works/slimeboy.html">
+							<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+							<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
+							<h3>web</h3>
+						</a>
+					</div>
 				</div>
-				<div class="item">
-					<a href="../pages/works/wake-me-up.html">
-						<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
-						<h3>sound</h3>
-						<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
-					</a>
-				</div>
-				<div class="item">
-					<a href="../pages/works/slimeboy.html">
-						<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
-						<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
-						<h3>web</h3>
-					</a>
-				</div>
+				<div class="category-items"></div>
 			</div>
 		</div>
 
+		<script src="../../src/js/worksPopulator.js"></script>
 		<script>
 			document.addEventListener("mousemove", function (e) {
 				mouse.x = e.clientX;

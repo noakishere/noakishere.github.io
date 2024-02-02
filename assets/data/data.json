@@ -1,5 +1,21 @@
 {
-	"0": {
-		"title": "hello2222<br>lol"
-	}
+	"games": {
+		"chroniqueur": {
+			"title": "chroniqueur",
+			"thumbnail": "chroniqueur-thumbnail.png",
+			"desc": "this is test"
+		},
+		"ngci": {
+			"title": "city Player: Chinatown",
+			"thumbnail": "city-player-chinatown.jpg",
+			"desc": "this is test"
+		},
+		"meanwhile": {
+			"title": "meanwhile",
+			"thumbnail": "meanwhile-thumbnail.png",
+			"desc": "this is test 2"
+		}
+	},
+	"sound": {},
+	"web": {}
 }
