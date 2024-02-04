@@ -13,6 +13,16 @@ canvas {
 	z-index: -1;
 }
 
+.desc-p {
+	max-width: 700px;
+	line-height: 200%;
+	word-wrap: break-word;
+}
+
+.desc-img {
+	margin: auto;
+}
+
 .container {
 	display: grid;
 	align-content: center;
@@ -235,6 +245,10 @@ a {
 		grid-template-columns: auto;
 	}
 
+	.work-header {
+		grid-template-columns: auto;
+	}
+
 	.single-work-container {
 		width: 90%;
 	}
@@ -246,6 +260,9 @@ a {
 	}
 
 	.work-container {
+		grid-template-columns: auto;
+	}
+	.work-header {
 		grid-template-columns: auto;
 	}
 

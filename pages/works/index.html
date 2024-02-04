@@ -37,12 +37,12 @@
 						<h3>games</h3>
 						<!-- </a> -->
 					</div>
-					<div class="item">
-						<a href="../pages/works/wake-me-up.html">
-							<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
-							<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
-							<h3>sound</h3>
-						</a>
+					<div onclick="populateItems(1)" class="item">
+						<!-- <a href="../pages/works/wake-me-up.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
+						<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
+						<h3>audio/video</h3>
+						<!-- </a> -->
 					</div>
 					<div class="item">
 						<a href="../pages/works/slimeboy.html">
@@ -63,6 +63,109 @@
 					><h5>&lt; return</h5></span
 				>
 				<div class="category-items"></div>
+			</div>
+
+			<div class="single-work-container" style="display: none">
+				<span id="returnCat" style="display: none" onclick="showCategories()"
+					><h5>&lt; return</h5></span
+				>
+				<div class="work-container">
+					<div class="work-header">
+						<div class="pic">
+							<img
+								id="headerPIC"
+								class=""
+								src="../../assets/works-images/meanwhile/buyership.gif"
+								alt=""
+							/>
+						</div>
+						<div class="info">
+							<ul>
+								<li><span class="bold">Title:</span> <span id="infoTITLE">Meanwhile</span></li>
+								<li><span class="bold">Medium:</span> <span id="infoMEDIUM">Unity, C#</span></li>
+								<li><span class="bold">Date:</span> <span id="infoDATE">2021-2022</span></li>
+								<li>
+									<span class="bold">Links:</span>
+									<ul id="infoLinks">
+										<li>
+											<a href="https://noakishere.itch.io/meanwhile" target="_blank"> itch </a>
+										</li>
+										<li>
+											<a href="https://github.com/noakishere/meanwhile-game" target="_blank">
+												source code
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="work-description">
+						<h3>Description</h3>
+						<p>
+							Meanwhile is an experimental strategy-idle game, where workers
+							<br />
+							are hired to your workcamp for a fixed price and they cut logs
+							<br />
+							which will later be used for different occassions such as selling or
+							<br />
+							improving the general state of the camp.
+							<br />
+							<br />
+							The reality of these workers is that movement is lethal <br />
+							and the player as the employer has to make the decision to either
+							<br />
+							use them as a means to an end, or to ensure that the workers stay alive <br />
+							as long as possible, even though they're easily replaceable.
+						</p>
+
+						<p>
+							This game is an attempt to make a commentary on our <br />
+							society's standards of workers' rights <br />
+							and to reflect on today's norms of exploitations.
+						</p>
+
+						<center>
+							<img class="" src="../../assets/works-images/meanwhile/workersdeath.gif" alt="" />
+						</center>
+
+						<h3>Technical decisions</h3>
+
+						<p>
+							Unity engine has been used to develop and design this game. <br />
+							The programming language is C# and multiple programming patterns
+							<br />
+							have been used to implement the gameflow.
+						</p>
+						<p>
+							Singleton pattern has been used to facilitate the communication<br />
+							between the managers such as GameManager, WorkerManager, etc.
+							<br />
+							<br />
+							NavMesh 2d has also been used for pathfinding of workers.
+							<br />
+							<br />
+							State pattern was used to keep track of workers' different states,
+							<br />
+							and Bus Event Pattern was used to notify the managers of <br />
+							different changes during the game.
+						</p>
+
+						<h3>Credits</h3>
+
+						<ul>
+							<li>
+								<span class="bold"> Programming - Game Design - Sound Design: </span>
+								Kamyar Karimi
+							</li>
+							<li>
+								<span class="bold">Art:</span> Keney Free assets -
+								<a href="">link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 

@@ -3,19 +3,70 @@
 		"chroniqueur": {
 			"title": "chroniqueur",
 			"thumbnail": "chroniqueur-thumbnail.png",
-			"desc": "this is test"
+			"desc": "this is test",
+			"medium": "Unity, C#",
+			"date": "2022-present",
+			"links": [
+				["itch", "https://noakishere.itch.io/meanwhile"],
+				["source code", "https://github.com/noakishere/meanwhile-game"],
+				["source code", "https://github.com/noakishere/meanwhile-game"]
+			]
 		},
 		"ngci": {
 			"title": "city Player: Chinatown",
 			"thumbnail": "city-player-chinatown.jpg",
-			"desc": "this is test"
+			"desc": "this is test",
+			"medium": "Unity, C#",
+			"date": "2023"
 		},
 		"meanwhile": {
 			"title": "meanwhile",
 			"thumbnail": "meanwhile-thumbnail.png",
-			"desc": "this is test 2"
+			"desc": [
+				[
+					"Description",
+					"Meanwhile is an experimental strategy-idle game, where workers are hired to your workcamp for a fixed price and they cut logs which will later be used for different occassions such as selling or improving the general state of the camp. The reality of these workers is that movement is lethal and the player as the employer has to make the decision to either use them as a means to an end, or to ensure that the workers stay alive as long as possible, even though they're easily replaceable. This game is an attempt to make a commentary on our society's standards of workers' rights and to reflect on today's norms of exploitations."
+				],
+				["../../assets/works-images/meanwhile/workersdeath.gif"],
+				[
+					"Technical Desicions",
+					"Unity engine has been used <span class='bold'>to</span> develop and design this game. The programming language is C# and multiple programming patterns have been used to implement the gameflow. Singleton pattern has been used to facilitate the communication between the managers such as GameManager, WorkerManager, etc. NavMesh 2d has also been used for pathfinding of workers. State pattern was used to keep track of workers' different states, and Bus Event Pattern was used to notify the managers of different changes during the game."
+				],
+				[
+					"Credits",
+					"<span class='bold'>Programming - Game Design - Sound Design:</span>Kamyar Karimi<br /><span class='bold'>Art:</span> Keney Free assets -<a href=''>link</a>"
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "2021-2022",
+			"links": [
+				["itch", "https://noakishere.itch.io/meanwhile"],
+				["source code", "https://github.com/noakishere/meanwhile-game"],
+				["source code", "https://github.com/noakishere/meanwhile-game"]
+			]
 		}
 	},
-	"sound": {},
+	"sound": {
+		"dwm": {
+			"title": "dancing with the machine",
+			"thumbnail": "dwm-thumbnail.png",
+			"desc": "music ds test"
+		},
+		"desel": {
+			"title": "deconstructed selfies",
+			"thumbnail": "ds-thumbnail.png",
+			"desc": "music ds test"
+		},
+		"tor": {
+			"title": "tale of ronin",
+			"thumbnail": "tor-thumbnail.png",
+			"desc": "music ds test"
+		},
+		"pascalWager": {
+			"title": "pascal's wager",
+			"thumbnail": "music-thumbnail.png",
+			"desc": "music test"
+		}
+	},
 	"web": {}
 }
