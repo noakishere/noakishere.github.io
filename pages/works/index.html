@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="../../src/css/main.css" />
 
 		<script src="https://unpkg.com/hydra-synth"></script>
-		<title>Works | Kamyar Karimi - Computation Arts Portfolio 2022</title>
+		<title>Works</title>
 	</head>
 	<body>
 		<div class="container2">
@@ -33,30 +33,50 @@
 					<div onclick="populateItems(0)" class="item">
 						<!-- <a href="./items.html"> -->
 						<!-- <img class="avatar" src="../assets/works-images/meanwhile-thumbnail.png" alt="" /> -->
-						<canvas class="avatar" id="myCanvas" width="400px" height="400px"></canvas>
+						<canvas
+							class="avatar"
+							id="myCanvas"
+							width="400px"
+							height="400px"
+						></canvas>
 						<h3>games</h3>
 						<!-- </a> -->
 					</div>
 					<div onclick="populateItems(1)" class="item">
 						<!-- <a href="../pages/works/wake-me-up.html"> -->
 						<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
-						<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
+						<canvas
+							class="avatar"
+							id="myCanvas2"
+							width="400px"
+							height="400px"
+						></canvas>
 						<h3>audio/video</h3>
 						<!-- </a> -->
 					</div>
-					<div class="item">
-						<a href="../pages/works/slimeboy.html">
-							<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
-							<canvas class="avatar" id="myCanvas4" width="400px" height="400px"></canvas>
-							<h3>installations</h3>
-						</a>
+					<div onclick="populateItems(2)" class="item">
+						<!-- <a href="../pages/works/slimeboy.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+						<canvas
+							class="avatar"
+							id="myCanvas4"
+							width="400px"
+							height="400px"
+						></canvas>
+						<h3>installations</h3>
+						<!-- </a> -->
 					</div>
-					<div class="item">
-						<a href="../pages/works/slimeboy.html">
-							<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
-							<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
-							<h3>web</h3>
-						</a>
+					<div onclick="populateItems(3)" class="item">
+						<!-- <a href="../pages/works/slimeboy.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+						<canvas
+							class="avatar"
+							id="myCanvas3"
+							width="400px"
+							height="400px"
+						></canvas>
+						<h3>web</h3>
+						<!-- </a> -->
 					</div>
 				</div>
 				<span id="returnCat" style="display: none" onclick="showCategories()"
@@ -81,17 +101,34 @@
 						</div>
 						<div class="info">
 							<ul>
-								<li><span class="bold">Title:</span> <span id="infoTITLE">Meanwhile</span></li>
-								<li><span class="bold">Medium:</span> <span id="infoMEDIUM">Unity, C#</span></li>
-								<li><span class="bold">Date:</span> <span id="infoDATE">2021-2022</span></li>
+								<li>
+									<span class="bold">Title:</span>
+									<span id="infoTITLE">Meanwhile</span>
+								</li>
+								<li>
+									<span class="bold">Medium:</span>
+									<span id="infoMEDIUM">Unity, C#</span>
+								</li>
+								<li>
+									<span class="bold">Date:</span>
+									<span id="infoDATE">2021-2022</span>
+								</li>
 								<li>
 									<span class="bold">Links:</span>
 									<ul id="infoLinks">
 										<li>
-											<a href="https://noakishere.itch.io/meanwhile" target="_blank"> itch </a>
+											<a
+												href="https://noakishere.itch.io/meanwhile"
+												target="_blank"
+											>
+												itch
+											</a>
 										</li>
 										<li>
-											<a href="https://github.com/noakishere/meanwhile-game" target="_blank">
+											<a
+												href="https://github.com/noakishere/meanwhile-game"
+												target="_blank"
+											>
 												source code
 											</a>
 										</li>
@@ -108,7 +145,8 @@
 							<br />
 							are hired to your workcamp for a fixed price and they cut logs
 							<br />
-							which will later be used for different occassions such as selling or
+							which will later be used for different occassions such as selling
+							or
 							<br />
 							improving the general state of the camp.
 							<br />
@@ -116,7 +154,8 @@
 							The reality of these workers is that movement is lethal <br />
 							and the player as the employer has to make the decision to either
 							<br />
-							use them as a means to an end, or to ensure that the workers stay alive <br />
+							use them as a means to an end, or to ensure that the workers stay
+							alive <br />
 							as long as possible, even though they're easily replaceable.
 						</p>
 
@@ -127,7 +166,11 @@
 						</p>
 
 						<center>
-							<img class="" src="../../assets/works-images/meanwhile/workersdeath.gif" alt="" />
+							<img
+								class=""
+								src="../../assets/works-images/meanwhile/workersdeath.gif"
+								alt=""
+							/>
 						</center>
 
 						<h3>Technical decisions</h3>
@@ -156,7 +199,9 @@
 
 						<ul>
 							<li>
-								<span class="bold"> Programming - Game Design - Sound Design: </span>
+								<span class="bold">
+									Programming - Game Design - Sound Design:
+								</span>
 								Kamyar Karimi
 							</li>
 							<li>
@@ -181,7 +226,10 @@
 				detectAudio: false,
 			});
 
-			voronoi(50, 0.2, 10).modulateKaleid(noise(1, 0.01, 500), 0.01).kaleid().out(o0);
+			voronoi(50, 0.2, 10)
+				.modulateKaleid(noise(1, 0.01, 500), 0.01)
+				.kaleid()
+				.out(o0);
 
 			var hydra2 = new Hydra({
 				canvas: document.getElementById("myCanvas2"),

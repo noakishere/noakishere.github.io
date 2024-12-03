@@ -74,7 +74,7 @@ function showItem(item) {
 
 	if (selectedSingleItem != null) {
 		// ****HEADER INFO SECTION***
-		headerPIC.src = `../../assets/img/${selectedSingleItem[1].thumbnail}`;
+		headerPIC.src = `../../assets/img/${selectedSingleItem[1].headerPIC}`;
 		// info
 		infoTitle.innerHTML = selectedSingleItem[1].title;
 		infoMedium.innerHTML = selectedSingleItem[1].medium;
@@ -84,16 +84,18 @@ function showItem(item) {
 		infoLinks.innerHTML = "";
 		let links = selectedSingleItem[1].links;
 
-		links.forEach((link) => {
-			let newListItem = document.createElement("li");
-			let newLink = document.createElement("a");
-			newLink.innerHTML = link[0];
-			newLink.href = link[1];
-			newLink.target = "_blank";
+		if (links != null) {
+			links.forEach((link) => {
+				let newListItem = document.createElement("li");
+				let newLink = document.createElement("a");
+				newLink.innerHTML = link[0];
+				newLink.href = link[1];
+				newLink.target = "_blank";
 
-			newListItem.appendChild(newLink);
-			infoLinks.appendChild(newListItem);
-		});
+				newListItem.appendChild(newLink);
+				infoLinks.appendChild(newListItem);
+			});
+		}
 
 		// DESCRIPTION
 

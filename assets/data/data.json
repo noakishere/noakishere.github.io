@@ -3,7 +3,13 @@
 		"chroniqueur": {
 			"title": "chroniqueur",
 			"thumbnail": "chroniqueur-thumbnail.png",
-			"desc": "this is test",
+			"desc": [
+				[
+					"Description",
+					"Meanwhile is an experimental strategy-idle game, where workers are hired to your workcamp for a fixed price and they cut logs which will later be used for different occassions such as selling or improving the general state of the camp. The reality of these workers is that movement is lethal and the player as the employer has to make the decision to either use them as a means to an end, or to ensure that the workers stay alive as long as possible, even though they're easily replaceable. This game is an attempt to make a commentary on our society's standards of workers' rights and to reflect on today's norms of exploitations."
+				],
+				["../../assets/works-images/meanwhile/workersdeath.gif"]
+			],
 			"medium": "Unity, C#",
 			"date": "2022-present",
 			"links": [
@@ -13,15 +19,33 @@
 			]
 		},
 		"ngci": {
-			"title": "city Player: Chinatown",
+			"title": "City Player: Chinatown",
 			"thumbnail": "city-player-chinatown.jpg",
-			"desc": "this is test",
+			"headerPIC": "ngci-gif.gif",
+			"desc": [
+				[
+					"Description",
+					"City player: Chinatown is an innovative gamified urban simulation platform designed to empower stakeholders, including city planners, researchers, and citizens, to interact with their neighborhoods in dynamic and engaging ways. As part of the TOOLS4CITIES suite, City player combines serious gaming with advanced visualization tools to tackle challenges related to environmental sustainability and urban livability. Through its immersive features, users can explore, modify, and optimize their urban environments while understanding the trade-offs involved in sustainable development. The platform leverages cutting-edge technology, including 3D visualization, human-computer interaction (HCI), and data analytics, to create a user-friendly and insightful experience. CITYplayer is a valuable tool for envisioning and building livable cities that balance social, economic, and environmental needs."
+				],
+				["../../assets/img/city-player-chinatown-header.jpg"],
+				[
+					"My contributions:",
+					"As a Software Developer and Research Assistant at Concordia University's Next Generation Cities Institute, I contributed to the CITYplayer project with the following tasks: <ul><li><span class=\"bold\">Designing and implementing new features in the Unity engine</span> to enhance gameplay mechanics and urban simulation capabilities.</li><li><span class=\"bold\">Prototyping gamified elements</span> to increase user engagement.</li><li><span class=\"bold\">Collaborating with 3D artists</span> to develop efficient pipelines for integrating high-quality assets into the simulation.</li><li><span class=\"bold\">Implementing machine learning algorithms</span> for urban data analysis to provide actionable insights.</li><li><span class=\"bold\">Working closely with urban planners, researchers, and developers</span> to align technical implementation with project goals.</li></ul> The objective was to create a versatile tool for envisioning sustainable urban futures by enabling stakeholders to visualize and experiment with potential solutions in an interactive and impactful way."
+				]
+			],
 			"medium": "Unity, C#",
-			"date": "2023"
+			"date": "2023",
+			"links": [
+				[
+					"website",
+					"https://www.concordia.ca/research/cities-institute/initiatives/tools4cities/cityplayer.html"
+				]
+			]
 		},
 		"meanwhile": {
 			"title": "meanwhile",
 			"thumbnail": "meanwhile-thumbnail.png",
+			"headerPIC": "meanwhile-thumbnail-gif.gif",
 			"desc": [
 				[
 					"Description",
@@ -30,7 +54,7 @@
 				["../../assets/works-images/meanwhile/workersdeath.gif"],
 				[
 					"Technical Desicions",
-					"Unity engine has been used <span class='bold'>to</span> develop and design this game. The programming language is C# and multiple programming patterns have been used to implement the gameflow. Singleton pattern has been used to facilitate the communication between the managers such as GameManager, WorkerManager, etc. NavMesh 2d has also been used for pathfinding of workers. State pattern was used to keep track of workers' different states, and Bus Event Pattern was used to notify the managers of different changes during the game."
+					"<span class='bold'>Unity engine</span> has been used to develop and design this game. The programming language is C# and multiple programming patterns have been used to implement the gameflow. Singleton pattern has been used to facilitate the communication between the managers such as GameManager, WorkerManager, etc. NavMesh 2d has also been used for pathfinding of workers. State pattern was used to keep track of workers' different states, and Bus Event Pattern was used to notify the managers of different changes during the game."
 				],
 				[
 					"Credits",
