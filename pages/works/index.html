@@ -28,6 +28,9 @@
 	<body>
 		<div class="container2">
 			<a href="../../index.html"><h1>&lt; home</h1></a>
+			<span id="returnCat" style="display: none" onclick="showCategories()"
+				><h5>&lt; return</h5></span
+			>
 			<div class="works-container">
 				<div class="categories">
 					<div onclick="populateItems(0)" class="item">
@@ -79,16 +82,11 @@
 						<!-- </a> -->
 					</div>
 				</div>
-				<span id="returnCat" style="display: none" onclick="showCategories()"
-					><h5>&lt; return</h5></span
-				>
 				<div class="category-items"></div>
 			</div>
 
 			<div class="single-work-container" style="display: none">
-				<span id="returnCat" style="display: none" onclick="showCategories()"
-					><h5>&lt; return</h5></span
-				>
+				<span id="returnItem" style="display: none"><h5>&lt; return</h5></span>
 				<div class="work-container">
 					<div class="work-header">
 						<div class="pic">
@@ -211,6 +209,28 @@
 						</ul>
 					</div>
 				</div>
+
+				<!-- <div class="carousel" style="display: none">
+					<div class="carousel-track">
+						<img
+							class="carousel-item"
+							src="../../assets/img/chron-head.png"
+							alt="Slide 1"
+						/>
+						<img
+							class="carousel-item"
+							src="../../assets/img/chron-pic-1.png"
+							alt="Slide 2"
+						/>
+						<img
+							class="carousel-item"
+							src="../../assets/img/ds-thumbnail.png"
+							alt="Slide 3"
+						/>
+					</div>
+					<button class="carousel-button prev">‹</button>
+					<button class="carousel-button next">›</button>
+				</div> -->
 			</div>
 		</div>
 
@@ -254,6 +274,8 @@
 				.modulateKaleid(noise(15, 0.01, 5), 0.01)
 				.contrast(() => Math.sin(time) * 5)
 				.out(o0);
+
+			//Carousel stuff
 		</script>
 	</body>
 </html>

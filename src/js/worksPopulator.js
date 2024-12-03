@@ -5,6 +5,15 @@ let selectedSingleItem;
 let container = document.querySelector(".category-items");
 let categories = document.querySelector(".categories");
 let returnBtn = document.getElementById("returnCat");
+let itemReturnBtn = document.getElementById("returnItem");
+
+// Carousel stuff
+let track;
+let slides;
+let nextButton;
+let prevButton;
+
+let categoryIndex = 0;
 
 // Single item DOMs
 let workContainer = document.querySelector(".work-container");
@@ -16,6 +25,7 @@ let infoMedium = document.querySelector("#infoMEDIUM");
 let infoDate = document.querySelector("#infoDATE");
 let infoLinks = document.querySelector("#infoLinks");
 let workDesc = document.querySelector(".work-description");
+let carouselContainer = document.querySelector(".carousel-track");
 
 addEventListener("DOMContentLoaded", (event) => {
 	fetch("../../assets/data/data.json")
@@ -29,12 +39,14 @@ addEventListener("DOMContentLoaded", (event) => {
 });
 
 function populateItems(category) {
+	categoryIndex = category;
 	// console.log(typeof Object.values(allData)[category]);
 	selectedItems = Object.entries(Object.values(allData)[category]);
 
 	container.innerHTML = "";
 	returnBtn.style.display = "block";
 	categories.style.display = "none";
+	singleWorkContainer.style.display = "none";
 
 	console.log(selectedItems);
 	if (selectedItems != null) {
@@ -64,11 +76,16 @@ function populateItems(category) {
 }
 
 function showItem(item) {
+	console.log(item);
 	selectedSingleItem = selectedItems[item];
 	console.log(selectedSingleItem);
 
 	container.innerHTML = "";
-	returnBtn.style.display = "block";
+	returnBtn.style.display = "none";
+	itemReturnBtn.style.display = "block";
+	itemReturnBtn.onclick = () => {
+		populateItems(categoryIndex);
+	};
 	categories.style.display = "none";
 	singleWorkContainer.style.display = "grid";
 
@@ -106,16 +123,22 @@ function showItem(item) {
 		itemDesc.forEach((element) => {
 			// workDesc.innerHTML += element;
 			if (element.length >= 2) {
-				// text
-				let newH = document.createElement("h3");
-				newH.innerHTML = element[0];
+				if (element[0] == "Carousel" && element[1].length > 0) {
+					generateCarousel(element);
+				} else if (element[0] == "Video") {
+					generateYTEmbed(element);
+				} else {
+					// text
+					let newH = document.createElement("h3");
+					newH.innerHTML = element[0];
 
-				let newP = document.createElement("p");
-				newP.innerHTML = element[1];
-				newP.classList.add("desc-p");
+					let newP = document.createElement("p");
+					newP.innerHTML = element[1];
+					newP.classList.add("desc-p");
 
-				workDesc.appendChild(newH);
-				workDesc.appendChild(newP);
+					workDesc.appendChild(newH);
+					workDesc.appendChild(newP);
+				}
 			}
 			// Image
 			else if (element.length == 1) {
@@ -127,6 +150,59 @@ function showItem(item) {
 			}
 		});
 	}
+}
+
+function generateYTEmbed(element) {
+	let newIframe = document.createElement("iframe");
+	newIframe.width = 560;
+	newIframe.height = 315;
+	newIframe.src = element[1];
+	newIframe.title = "video";
+	newIframe.allow =
+		"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+	newIframe.referrerPolicy = "strict-origin-when-cross-origin";
+	newIframe.allowFullscreen = true;
+	newIframe.frameBorder = 0;
+
+	newIframe.classList.add("desc-img");
+
+	workDesc.appendChild(newIframe);
+}
+
+function generateCarousel(element) {
+	let newCarousel = document.createElement("div");
+	newCarousel.classList.add("carousel");
+
+	let newCarouselTrack = document.createElement("div");
+	newCarouselTrack.classList.add("carousel-track");
+
+	newCarousel.appendChild(newCarouselTrack);
+
+	// process images
+	element[1].forEach((carouselImg) => {
+		let newImg = document.createElement("img");
+		newImg.src = carouselImg;
+		newImg.classList.add("carousel-item");
+
+		newCarouselTrack.appendChild(newImg);
+	});
+
+	let prevBtn = document.createElement("button");
+	prevBtn.classList.add("carousel-button");
+	prevBtn.classList.add("prev");
+	prevBtn.innerHTML = "<";
+
+	let nextBtn = document.createElement("button");
+	nextBtn.innerHTML = ">";
+	nextBtn.classList.add("carousel-button");
+	nextBtn.classList.add("next");
+
+	newCarousel.appendChild(prevBtn);
+	newCarousel.appendChild(nextBtn);
+
+	workDesc.appendChild(newCarousel);
+
+	triggerCarousel();
 }
 
 function showCategories() {
@@ -153,4 +229,41 @@ function getSpecificItem() {
 			showItem(item);
 		}
 	}
+}
+
+function triggerCarousel() {
+	track = document.querySelector(".carousel-track");
+	slides = Array.from(track.children);
+	nextButton = document.querySelector(".carousel-button.next");
+	prevButton = document.querySelector(".carousel-button.prev");
+
+	let currentSlideIndex = 0;
+
+	function updateCarousel() {
+		console.log("he");
+		const slideWidth = slides[0].getBoundingClientRect().width;
+		track.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
+	}
+
+	nextButton.addEventListener("click", () => {
+		if (currentSlideIndex < slides.length - 1) {
+			currentSlideIndex++;
+			updateCarousel();
+		} else {
+			currentSlideIndex = 0;
+			updateCarousel();
+		}
+	});
+
+	prevButton.addEventListener("click", () => {
+		if (currentSlideIndex > 0) {
+			currentSlideIndex--;
+			updateCarousel();
+		} else {
+			currentSlideIndex = slides.length - 1;
+			updateCarousel();
+		}
+	});
+
+	window.addEventListener("resize", updateCarousel);
 }

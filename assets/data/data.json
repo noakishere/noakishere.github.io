@@ -31,7 +31,7 @@
 					"Description",
 					"City player: Chinatown is an innovative gamified urban simulation platform designed to empower stakeholders, including city planners, researchers, and citizens, to interact with their neighborhoods in dynamic and engaging ways. As part of the TOOLS4CITIES suite, City player combines serious gaming with advanced visualization tools to tackle challenges related to environmental sustainability and urban livability. Through its immersive features, users can explore, modify, and optimize their urban environments while understanding the trade-offs involved in sustainable development. The platform leverages cutting-edge technology, including 3D visualization, human-computer interaction (HCI), and data analytics, to create a user-friendly and insightful experience. CITYplayer is a valuable tool for envisioning and building livable cities that balance social, economic, and environmental needs."
 				],
-				["../../assets/img/city-player-chinatown-header.jpg"],
+				["../../assets/img/city-player-chinatown.jpg"],
 				[
 					"My contributions:",
 					"As a Software Developer and Research Assistant at Concordia University's Next Generation Cities Institute, I contributed to the CITYplayer project with the following tasks: <ul><li><span class=\"bold\">Designing and implementing new features in the Unity engine</span> to enhance gameplay mechanics and urban simulation capabilities.</li><li><span class=\"bold\">Prototyping gamified elements</span> to increase user engagement.</li><li><span class=\"bold\">Collaborating with 3D artists</span> to develop efficient pipelines for integrating high-quality assets into the simulation.</li><li><span class=\"bold\">Implementing machine learning algorithms</span> for urban data analysis to provide actionable insights.</li><li><span class=\"bold\">Working closely with urban planners, researchers, and developers</span> to align technical implementation with project goals.</li></ul> The objective was to create a versatile tool for envisioning sustainable urban futures by enabling stakeholders to visualize and experiment with potential solutions in an interactive and impactful way."
@@ -96,5 +96,11 @@
 			"desc": "music test"
 		}
 	},
-	"web": {}
+	"installation": {
+		"dwm": {
+			"title": "dancing with the machine",
+			"thumbnail": "dwm-thumbnail.png",
+			"desc": "music ds test"
+		}
+	}
 }
