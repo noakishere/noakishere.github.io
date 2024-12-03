@@ -2,24 +2,28 @@
 	"games": {
 		"chroniqueur": {
 			"title": "chroniqueur",
-			"thumbnail": "chroniqueur-thumbnail.png",
+			"thumbnail": "chron-thumbnail.png",
+			"headerPIC": "chron-head.png",
 			"desc": [
 				[
 					"Description",
-					"Meanwhile is an experimental strategy-idle game, where workers are hired to your workcamp for a fixed price and they cut logs which will later be used for different occassions such as selling or improving the general state of the camp. The reality of these workers is that movement is lethal and the player as the employer has to make the decision to either use them as a means to an end, or to ensure that the workers stay alive as long as possible, even though they're easily replaceable. This game is an attempt to make a commentary on our society's standards of workers' rights and to reflect on today's norms of exploitations."
+					"Chroniqueur is an emergent narrative experimentation platform and deep social simulation engine that generates an entire human history, complete with a comprehensive archive of events. It aims to provide players with stories that arise organically from the dynamic interactions of simulated characters in a unique, ever-evolving world. Without pre-written narratives or AI-generated scripts, Chroniqueur lets stories emerge naturally, offering players the opportunity to explore or actively engage with the history of the simulated worlds. Each game generates a new world populated by thousands of characters, whose lives and actions have contextual reasons and tangible consequences, forming a rich tapestry of interwoven narratives. Chroniqueur serves as a versatile backdrop for various genres, such as life simulation, survival, management, and politics. Its standout feature is an extensive in-game documentation system—a growing “Wikipedia” of the simulation—that allows players to delve into the histories, relationships, and secrets of the simulated world."
 				],
-				["../../assets/works-images/meanwhile/workersdeath.gif"]
+				["../../assets/img/chron-pic-1.png"],
+				[
+					"My contributions:",
+					"As a developer on Chroniqueur, I contributed to the development of this complex narrative-driven world simulation through the following tasks: <ul><li><span class=\"bold\">Simulation Development:</span> Worked on the core world simulation narrative system using the Unity engine to enhance the emergent storytelling mechanics.</li><li><span class=\"bold\">LLM Integration:</span> Developed a pipeline for integrating Large Language Models (LLMs) to analyze in-game data and augment the narrative depth.</li><li><span class=\"bold\">Portrait Creation Tool:</span> Designed and implemented a rule-based portrait creation tool, enabling artists to generate character visuals dynamically based on predefined requirements. Added a portrait customization feature to the existing UI system for player interaction.</li><li><span class=\"bold\">Codebase Optimization:</span> Refactored the codebase by decoupling the main simulation system from Unity's rendering system, improving code management and enabling better game optimization.</li></ul>"
+				]
 			],
 			"medium": "Unity, C#",
 			"date": "2022-present",
 			"links": [
-				["itch", "https://noakishere.itch.io/meanwhile"],
-				["source code", "https://github.com/noakishere/meanwhile-game"],
-				["source code", "https://github.com/noakishere/meanwhile-game"]
+				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
+				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
 			]
 		},
 		"ngci": {
-			"title": "City Player: Chinatown",
+			"title": "city player: chinatown",
 			"thumbnail": "city-player-chinatown.jpg",
 			"headerPIC": "ngci-gif.gif",
 			"desc": [
@@ -34,7 +38,7 @@
 				]
 			],
 			"medium": "Unity, C#",
-			"date": "2023",
+			"date": "May - Aug 2023",
 			"links": [
 				[
 					"website",
