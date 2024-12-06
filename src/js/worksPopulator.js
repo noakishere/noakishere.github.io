@@ -152,6 +152,32 @@ function showItem(item) {
 	}
 }
 
+function showCategories() {
+	container.innerHTML = "";
+	returnBtn.style.display = "none";
+	singleWorkContainer.style.display = "none";
+	categories.style.display = "grid";
+}
+
+function getSpecificItem() {
+	const urlQuery = window.location.search;
+
+	let queries = urlQuery.slice(1);
+	queries = queries.split("&");
+
+	if (queries.length == 2) {
+		if (queries[0].includes("cat") && queries[1].includes("i")) {
+			let catQ = queries[0].split("=");
+			let itemQ = queries[1].split("=");
+
+			let cat = parseInt(catQ[1]);
+			let item = parseInt(itemQ[1]);
+			selectedItems = Object.entries(Object.values(allData)[cat]);
+			showItem(item);
+		}
+	}
+}
+
 function generateYTEmbed(element) {
 	let newIframe = document.createElement("iframe");
 	newIframe.width = 560;
@@ -203,32 +229,6 @@ function generateCarousel(element) {
 	workDesc.appendChild(newCarousel);
 
 	triggerCarousel();
-}
-
-function showCategories() {
-	container.innerHTML = "";
-	returnBtn.style.display = "none";
-	singleWorkContainer.style.display = "none";
-	categories.style.display = "grid";
-}
-
-function getSpecificItem() {
-	const urlQuery = window.location.search;
-
-	let queries = urlQuery.slice(1);
-	queries = queries.split("&");
-
-	if (queries.length == 2) {
-		if (queries[0].includes("cat") && queries[1].includes("i")) {
-			let catQ = queries[0].split("=");
-			let itemQ = queries[1].split("=");
-
-			let cat = parseInt(catQ[1]);
-			let item = parseInt(itemQ[1]);
-			selectedItems = Object.entries(Object.values(allData)[cat]);
-			showItem(item);
-		}
-	}
 }
 
 function triggerCarousel() {

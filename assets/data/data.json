@@ -55,7 +55,6 @@
 					"Description",
 					"Meanwhile is an experimental strategy-idle game, where workers are hired to your workcamp for a fixed price and they cut logs which will later be used for different occassions such as selling or improving the general state of the camp. The reality of these workers is that movement is lethal and the player as the employer has to make the decision to either use them as a means to an end, or to ensure that the workers stay alive as long as possible, even though they're easily replaceable. This game is an attempt to make a commentary on our society's standards of workers' rights and to reflect on today's norms of exploitations."
 				],
-				["../../assets/works-images/meanwhile/workersdeath.gif"],
 				[
 					"Technical Desicions",
 					"<span class='bold'>Unity engine</span> has been used to develop and design this game. The programming language is C# and multiple programming patterns have been used to implement the gameflow. Singleton pattern has been used to facilitate the communication between the managers such as GameManager, WorkerManager, etc. NavMesh 2d has also been used for pathfinding of workers. State pattern was used to keep track of workers' different states, and Bus Event Pattern was used to notify the managers of different changes during the game."
@@ -98,9 +97,43 @@
 	},
 	"installation": {
 		"dwm": {
-			"title": "dancing with the machine",
+			"title": "jamais vu",
 			"thumbnail": "dwm-thumbnail.png",
 			"desc": "music ds test"
+		},
+		"itsotl": {
+			"title": "in the shadow of the lens",
+			"thumbnail": "monolith-thumb.jpg",
+			"headerPIC": "",
+			"desc": [
+				[
+					"Description",
+					"In-the-Shadow-of-the-Lens is an interactive art installation designed to foster intimate and meaningful interactions between humans and machine learning systems. Intended for exhibition in isolated spaces, the project provides a solitary, immersive experience where users engage with a machine through head movements and sensory feedback. The machine, equipped with motion detection and learning systems, dynamically responds to the user's inputs, creating an evolving conversation using sonic and visual cues. This installation reimagines the role of surveillance technology, transforming it into a tool for observation and dialogue, offering users a reflective, collaborative, and impactful interaction with digital mechanisms."
+				],
+				[
+					"Video",
+					"https://www.youtube.com/embed/VhkqmHZHOWY?si=ESr45V2X2VuFAU5b?version=3&loop=1&playlist=VhkqmHZHOWY"
+				],
+				[
+					"Technical Details",
+					"A 6ft tall interactive instrument using Arduino/C, incorporating motion-detecting sensors for real-time head movement tracking and predictive LED responses was built for this installation. \n The entire sound synthesis was programmed in Max/MSP and sensors were connected to Arduino microcontrollers. The entire network topology was done through OSC protocols."
+				],
+				[
+					"Video",
+					"https://www.youtube.com/embed/m24z5EcWNwQ?si=y26yKigSfS0332hX?version=3&loop=1&playlist=m24z5EcWNwQ"
+				],
+				[
+					"Credits",
+					"<span class='bold'>Backend Programming - Sound Design - Max/MSP:</span>kamyar noak karimi<br /><span class='bold'>Instrument Design - Hardware/Sensor development:</span> rebecca acone"
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "2021-2022",
+			"links": [
+				["itch", "https://noakishere.itch.io/meanwhile"],
+				["source code", "https://github.com/noakishere/meanwhile-game"],
+				["source code", "https://github.com/noakishere/meanwhile-game"]
+			]
 		}
 	}
 }
