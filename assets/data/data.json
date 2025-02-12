@@ -1,0 +1,215 @@
+{
+	"games": {
+		"chroniqueur": {
+			"title": "chroniqueur",
+			"thumbnail": "chron-thumbnail.png",
+			"headerPIC": "chron-head.png",
+			"desc": [
+				[
+					"Description",
+					"Chroniqueur is an emergent narrative experimentation platform and deep social simulation engine that generates an entire human history, complete with a comprehensive archive of events. It aims to provide players with stories that arise organically from the dynamic interactions of simulated characters in a unique, ever-evolving world. Without pre-written narratives or AI-generated scripts, Chroniqueur lets stories emerge naturally, offering players the opportunity to explore or actively engage with the history of the simulated worlds. Each game generates a new world populated by thousands of characters, whose lives and actions have contextual reasons and tangible consequences, forming a rich tapestry of interwoven narratives. Chroniqueur serves as a versatile backdrop for various genres, such as life simulation, survival, management, and politics. Its standout feature is an extensive in-game documentation system—a growing “Wikipedia” of the simulation—that allows players to delve into the histories, relationships, and secrets of the simulated world."
+				],
+				["../../assets/img/chron-pic-1.png"],
+				[
+					"My contributions:",
+					"As a developer on Chroniqueur, I contributed to the development of this complex narrative-driven world simulation through the following tasks: <ul><li><span class=\"bold\">Simulation Development:</span> Worked on the core world simulation narrative system using the Unity engine to enhance the emergent storytelling mechanics.</li><li><span class=\"bold\">LLM Integration:</span> Developed a pipeline for integrating Large Language Models (LLMs) to analyze in-game data and augment the narrative depth.</li><li><span class=\"bold\">Portrait Creation Tool:</span> Designed and implemented a rule-based portrait creation tool, enabling artists to generate character visuals dynamically based on predefined requirements. Added a portrait customization feature to the existing UI system for player interaction.</li><li><span class=\"bold\">Codebase Optimization:</span> Refactored the codebase by decoupling the main simulation system from Unity's rendering system, improving code management and enabling better game optimization.</li></ul>"
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "2022-present",
+			"links": [
+				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
+				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
+			]
+		},
+		"ngci": {
+			"title": "city player: chinatown",
+			"thumbnail": "city-player-chinatown.jpg",
+			"headerPIC": "ngci-gif.gif",
+			"desc": [
+				[
+					"Description",
+					"City player: Chinatown is an innovative gamified urban simulation platform designed to empower stakeholders, including city planners, researchers, and citizens, to interact with their neighborhoods in dynamic and engaging ways. As part of the TOOLS4CITIES suite, City player combines serious gaming with advanced visualization tools to tackle challenges related to environmental sustainability and urban livability. Through its immersive features, users can explore, modify, and optimize their urban environments while understanding the trade-offs involved in sustainable development. The platform leverages cutting-edge technology, including 3D visualization, human-computer interaction (HCI), and data analytics, to create a user-friendly and insightful experience. CITYplayer is a valuable tool for envisioning and building livable cities that balance social, economic, and environmental needs."
+				],
+				["../../assets/img/city-player-chinatown.jpg"],
+				[
+					"My contributions:",
+					"As a Software Developer and Research Assistant at Concordia University's Next Generation Cities Institute, I contributed to the CITYplayer project with the following tasks: <ul><li><span class=\"bold\">Designing and implementing new features in the Unity engine</span> to enhance gameplay mechanics and urban simulation capabilities.</li><li><span class=\"bold\">Prototyping gamified elements</span> to increase user engagement.</li><li><span class=\"bold\">Collaborating with 3D artists</span> to develop efficient pipelines for integrating high-quality assets into the simulation.</li><li><span class=\"bold\">Implementing machine learning algorithms</span> for urban data analysis to provide actionable insights.</li><li><span class=\"bold\">Working closely with urban planners, researchers, and developers</span> to align technical implementation with project goals.</li></ul> The objective was to create a versatile tool for envisioning sustainable urban futures by enabling stakeholders to visualize and experiment with potential solutions in an interactive and impactful way."
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "May - Aug 2023",
+			"links": [
+				[
+					"website",
+					"https://www.concordia.ca/research/cities-institute/initiatives/tools4cities/cityplayer.html"
+				]
+			]
+		},
+		"meanwhile": {
+			"title": "meanwhile",
+			"thumbnail": "meanwhile-thumbnail.png",
+			"headerPIC": "meanwhile-thumbnail-gif.gif",
+			"desc": [
+				[
+					"Description",
+					"Meanwhile is an experimental strategy-idle game, where workers are hired to your workcamp for a fixed price and they cut logs which will later be used for different occassions such as selling or improving the general state of the camp. The reality of these workers is that movement is lethal and the player as the employer has to make the decision to either use them as a means to an end, or to ensure that the workers stay alive as long as possible, even though they're easily replaceable. This game is an attempt to make a commentary on our society's standards of workers' rights and to reflect on today's norms of exploitations."
+				],
+				[
+					"Technical Desicions",
+					"<span class='bold'>Unity engine</span> has been used to develop and design this game. The programming language is C# and multiple programming patterns have been used to implement the gameflow. Singleton pattern has been used to facilitate the communication between the managers such as GameManager, WorkerManager, etc. NavMesh 2d has also been used for pathfinding of workers. State pattern was used to keep track of workers' different states, and Bus Event Pattern was used to notify the managers of different changes during the game."
+				],
+				[
+					"Credits",
+					"<span class='bold'>Programming - Game Design - Sound Design:</span>Kamyar Karimi<br /><span class='bold'>Art:</span> Keney Free assets -<a href=''>link</a>"
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "2021-2022",
+			"links": [
+				["itch", "https://noakishere.itch.io/meanwhile"],
+				["source code", "https://github.com/noakishere/meanwhile-game"],
+				["source code", "https://github.com/noakishere/meanwhile-game"]
+			]
+		}
+	},
+	"sound": {
+		"deselregen": {
+			"title": "deconstructed selfies: regen",
+			"thumbnail": "dslr-thumbnail.png",
+			"headerPIC": "deselre-head.png",
+			"desc": [
+				[
+					"Description",
+					"In the first iteration of the project, the project unveiled a metamorphosis of real-human-beings, a symbiosis of pixels and emotion. Within this audiovisual journey, four digital portraits manifested, each accompanied by a symphony of sound. In the regenerated edition, the work invites viewers to partake in the deconstruction."
+				],
+				["../../assets/img/ds1.jpg"],
+				[
+					"",
+					"The generative AI models allow for unexpected results that are created by each participant’s input, mainly data taken from their faces/selfies. The base model is instructed to deconstruct the faces and match them with elements that represent a face in a virtually manipulated domain. Given that the first edition was all manually done by the creator, now in collaboration with the AI model, various results could be produced. <br><br> This audio/visual project can promote an immersive experience in which the viewer/participant reflects more upon their own identity, and how it’s shaped within a digital environment. Their physicality is first and foremost manipulated by the AI models, which are a reflection of how much authority these models can have in a post-generative AI world. The final alteration also reflects on how “selfies” were thought of previously, presently, and how generative AI will shape a future for them. This new collaboration between the artist, a neural network, and the audience present newer areas of thinking on the new wave of cybernetics, observing systems, and creation as a whole."
+				],
+				[
+					"Exhibition",
+					"This work was exhibited at <a href='https://forum.mutek.org/en/speakers/kamyar-karimi' target='_blank'>MUTEK Forum 2024</a>."
+				],
+				["../../assets/img/ds3.jpg"],
+				["../../assets/img/ds2.jpg"],
+				["../../assets/img/ds4.jpg"]
+			],
+			"medium": "Unity, C#",
+			"date": "2022-present",
+			"links": [
+				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
+				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
+			]
+		},
+		"desel": {
+			"title": "deconstructed selfies",
+			"thumbnail": "ds-thumbnail.png",
+			"headerPIC": "desel-head.png",
+			"desc": [
+				[
+					"Description",
+					"In the realm of cyber-alternation and visionary deconstruction, this body of work unveils a metamorphosis of real-human-beings, a symbiosis of pixels and emotion. Within this audiovisual journey, four digital portraits manifest, each accompanied by a symphony of sound. The purpose of this endeavor is to traverse uncharted territories of narrative, where words fade into insignificance. With this inaugural edition, the work delves into the essence of familial identity, extracting and rearranging layers of each member's being. These fragments are delicately reassembled, finding residence within the storyteller’s subconscious. 'Deconstructed Selfies' invites viewers to traverse the corridors of the mind, exploring the delicate intricacies that shape our sense of self, within the bonds of family."
+				],
+				["Video", "https://www.youtube.com/embed/eqrTuyYZDzA?si=OvT9TW_Ng_oDe5JE"],
+				[
+					"",
+					"The complete work includes a 7 minute video that is meant to be looped over and over, with sound work that is meant to be heard through headphones. This work is best suited for an intimate experience with its viewer in a space which hosts many wandering heads, who want to feel the story."
+				]
+			],
+			"medium": "Unity, C#",
+			"date": "2022-present",
+			"links": [
+				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
+				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
+			]
+		}
+	},
+	"installation": {
+		"jmv": {
+			"title": "jamais vu",
+			"thumbnail": "jmv-thumbnail.png",
+			"headerPIC": "jmv-header.png",
+			"desc": [
+				[
+					"Description",
+					"Jamais Vu is an interactive installation designed to evoke the sensation of unfamiliarity with the familiar. It incorporates a generative soundscape using crowdsourced audio from Montreal, collected via a web app and physical devices. The project draws on Viktor Shklovsky's concept of 'defamiliarization' and Baudrillard’s ideas on hyperreality to prompt critical reflection on how our data-driven world reinterprets personal experiences. Using a blend of technology, sound, and visual projections, the installation challenges perceptions of reality and empowers participants to shape the soundscape. Inspired by hauntology, it encourages reimagining the present and envisioning new futures."
+				],
+				["MyVideo", "../../assets/videos/jm1.MP4"],
+				[
+					"Design Narrative",
+					"The installation features a central projection area of suspended fabric sheets onto which audio-reactive visuals are projected, representing a digitized portrayal of Montreal. Participants are invited to wander throughout and interact with the space from multiple angles. The room is enveloped by a spatialized generative soundscape, made by our participatory archive of crowdsourced audio submitted to our website. These sounds—everyday recordings of the city—are passed through a machine learning process that fragments, distorts, and reassembles these sounds into a reimagined algorithmic city. Handheld recording devices placed throughout the installation allow participants to contribute new sounds in real-time, providing a tactile way to engage while inside the installation. This interplay of different mediums and modes of participation is designed to create a space for interpretation and subjective sensory experience that resists being reduced to a singular, data-driven narrative. Each iteration of Jamais Vu is unique, consisting of a new combination of sounds from the past and present, always changing and reacting to new data fed by participants and giving agency back to the audience through the data collection process. In this way, the installation becomes a kind of haunted space: a simulated environment in which the boundaries between real and unreal, past and present, are fluid."
+				],
+				["MyVideo", "../../assets/videos/jm3.MP4"],
+				[
+					"MACHINE LEARNING and AudioStellar",
+					"AudioStellar to achieve the goal of recreating urban sounds that are fed on our own small dataset of field recordings, as well as data collected from the web application. AudioStellar’s clustering algorithm allowed us to have different clusters of sound extracted from the audio files. Also, AudioStellar’s built-in tools such as sequencers and effects allowed us to have in-software sound design and also randomized and mutated sequences over time to keep the sound fresh and new for each iteration. <br><br> A Max/MSP patch was designed and developed for the receiving audio files from the device. Firstly, a Node server was running to receive the Argon device’s audio files and store them in the host computer. In addition to that, a Python script was continuously running that keeps track of the incoming files and stores them in a queue. The queue processing is (wait line = audio_file_duration + 15secs. which is the machine learning part’s duration). This script would trigger the Max/MSP patch with the correct audio file’s name to be played. The sound would then first be played in a normal manner and then slowly reverb + delay effects would take over to disintegrate and decay the original audio file, and ultimately it would be replaced with the Machine Learning model’s decoded sound. The model that we used was Isis trained by IRCAM and then processed through RAVE as an encoder/decoder. This model was useful because it was trained on speech and we could use it to replicate the speech-audio files that we’d receive from the device. This patch also sent OSC messages to TouchDesigner where the visuals were rendered for when the ML model was activated with its sound frequency sent over to TD for special visual effects. "
+				]
+			],
+			"medium": "Max/MSP, Touchdesigner",
+			"date": "2024",
+			"links": [
+				["website", "https://jamaisvu.app"],
+				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
+			]
+		},
+		"itsotl": {
+			"title": "in the shadow of the lens",
+			"thumbnail": "lens-thumbnail.png",
+			"headerPIC": "lens-header.png",
+			"desc": [
+				[
+					"Description",
+					"In-the-Shadow-of-the-Lens is an interactive art installation designed to foster intimate and meaningful interactions between humans and machine learning systems. Intended for exhibition in isolated spaces, the project provides a solitary, immersive experience where users engage with a machine through head movements and sensory feedback. The machine, equipped with motion detection and learning systems, dynamically responds to the user's inputs, creating an evolving conversation using sonic and visual cues. This installation reimagines the role of surveillance technology, transforming it into a tool for observation and dialogue, offering users a reflective, collaborative, and impactful interaction with digital mechanisms."
+				],
+				[
+					"Video",
+					"https://www.youtube.com/embed/VhkqmHZHOWY?si=ESr45V2X2VuFAU5b?version=3&loop=1&playlist=VhkqmHZHOWY"
+				],
+				[
+					"Technical Details",
+					"A 6ft tall interactive instrument using Arduino/C, incorporating motion-detecting sensors for real-time head movement tracking and predictive LED responses was built for this installation. \n The entire sound synthesis was programmed in Max/MSP and sensors were connected to Arduino microcontrollers. The entire network topology was done through OSC protocols."
+				],
+				[
+					"Video",
+					"https://www.youtube.com/embed/m24z5EcWNwQ?si=y26yKigSfS0332hX?version=3&loop=1&playlist=m24z5EcWNwQ"
+				],
+				[
+					"Credits",
+					"<span class='bold'>Backend Programming - Sound Design - Max/MSP:</span>kamyar noak karimi<br /><span class='bold'>Instrument Design - Hardware/Sensor development:</span> rebecca acone"
+				]
+			],
+			"medium": "Max/MSP, Arduino",
+			"date": "2023-2024"
+		},
+		"alterite": {
+			"title": "alterité",
+			"thumbnail": "alterite-thumbnail.png",
+			"headerPIC": "alterite-header.png",
+			"desc": [
+				[
+					"Description",
+					"“Altérité” or “Otherness” is an interactive installation based on the recognition of others in their difference. It offers an experiential approach to human life in a wheelchair. The installation is designed so that one person at a time can interact. The space used and the context promote the deconstruction of stereotypes and standard places used by the person in wheelchair."
+				],
+				["../../assets/img/alter1.jpg"],
+				[
+					"Technical Details",
+					"A camera is fixed at the height of the user’s face. A mirror effect is suggested via an electronic tablet attached, like a head, to the back of an autonomous motorized wheelchair. Here, the face of the user of the manual wheelchair appears on the screen attached to the motorized wheelchair, thus becoming an objectified mechanism. A projection on the wall reflects the interactions in the space in the third person. Sounds and voices present “killer sentences”, those which invisibilize, discriminate and limit the presence of people in wheelchair in the public square."
+				],
+				["../../assets/img/alter2.jpg"],
+				[
+					"Exhibition",
+					"This work was Exhibited at SAT during <a href='https://derivative.ca/community-post/5-teams-put-touchdesigner-work-hacklab24/69814#:~:text=in%20the%20third%20person%20(en)' target='_blank'>Hacklab 2024</a>."
+				],
+				["../../assets/img/alter3.jpg"],
+				[
+					"Credits",
+					"<span class='bold'>Developer:</span>kamyar noak karimi<br /><span class='bold'>Interaction Designer:</span> Rebecca Acone, João Nogueira Tragtenberg <br /><span class='bold'>Visual Designer:</span> Consuelo Donati <br /><span class='bold'>Sound Designer:</span> Matteo Tomasetti, Salomon Lewis, <br /><span class='bold'>Conceptual Designer:</span> Gaëtane Cummings"
+				]
+			],
+			"medium": "Max/MSP, Arduino",
+			"date": "2023-2024"
+		}
+	}
+}

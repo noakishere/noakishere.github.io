@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="../../src/css/main.css" />
+
+		<script src="https://unpkg.com/hydra-synth"></script>
+		<title>Works</title>
+	</head>
+	<body>
+		<div class="container2">
+			<a href="../../index.html"><h1>&lt; home</h1></a>
+			<span id="returnCat" style="display: none" onclick="showCategories()"
+				><h5>&lt; return</h5></span
+			>
+			<div class="works-container">
+				<div class="categories">
+					<div onclick="populateItems(0)" class="item">
+						<!-- <a href="./items.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/meanwhile-thumbnail.png" alt="" /> -->
+						<canvas class="avatar" id="myCanvas" width="400px" height="400px"></canvas>
+						<h3>games</h3>
+						<!-- </a> -->
+					</div>
+					<div onclick="populateItems(1)" class="item">
+						<!-- <a href="../pages/works/wake-me-up.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/wakemeup-thumbnail.gif" alt="" /> -->
+						<canvas class="avatar" id="myCanvas2" width="400px" height="400px"></canvas>
+						<h3>audio/video</h3>
+						<!-- </a> -->
+					</div>
+					<div onclick="populateItems(2)" class="item">
+						<!-- <a href="../pages/works/slimeboy.html"> -->
+						<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+						<canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas>
+						<h3>installations</h3>
+						<!-- </a> -->
+					</div>
+					<!-- <div onclick="populateItems(3)" class="item"> -->
+					<!-- <a href="../pages/works/slimeboy.html"> -->
+					<!-- <img class="avatar" src="../assets/works-images/slimeboy-thumbnail.png" alt="" /> -->
+					<!-- <canvas class="avatar" id="myCanvas3" width="400px" height="400px"></canvas> -->
+					<!-- <h3>web</h3> -->
+					<!-- </a> -->
+					<!-- </div> -->
+				</div>
+				<div class="category-items"></div>
+			</div>
+
+			<div class="single-work-container" style="display: none">
+				<span id="returnItem" style="display: none"><h5>&lt; return</h5></span>
+				<div class="work-container">
+					<div class="work-header">
+						<div class="pic">
+							<img
+								id="headerPIC"
+								class=""
+								src="../../assets/works-images/meanwhile/buyership.gif"
+								alt=""
+							/>
+						</div>
+						<div class="info">
+							<ul>
+								<li>
+									<span class="bold">Title:</span>
+									<span id="infoTITLE">Meanwhile</span>
+								</li>
+								<li>
+									<span class="bold">Medium:</span>
+									<span id="infoMEDIUM">Unity, C#</span>
+								</li>
+								<li>
+									<span class="bold">Date:</span>
+									<span id="infoDATE">2021-2022</span>
+								</li>
+								<li>
+									<span class="bold">Links:</span>
+									<ul id="infoLinks">
+										<li>
+											<a href="https://noakishere.itch.io/meanwhile" target="_blank"> itch </a>
+										</li>
+										<li>
+											<a href="https://github.com/noakishere/meanwhile-game" target="_blank">
+												source code
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="work-description">
+						<h3>Description</h3>
+						<p>
+							Meanwhile is an experimental strategy-idle game, where workers
+							<br />
+							are hired to your workcamp for a fixed price and they cut logs
+							<br />
+							which will later be used for different occassions such as selling or
+							<br />
+							improving the general state of the camp.
+							<br />
+							<br />
+							The reality of these workers is that movement is lethal <br />
+							and the player as the employer has to make the decision to either
+							<br />
+							use them as a means to an end, or to ensure that the workers stay alive <br />
+							as long as possible, even though they're easily replaceable.
+						</p>
+
+						<p>
+							This game is an attempt to make a commentary on our <br />
+							society's standards of workers' rights <br />
+							and to reflect on today's norms of exploitations.
+						</p>
+
+						<center>
+							<img class="" src="../../assets/works-images/meanwhile/workersdeath.gif" alt="" />
+						</center>
+
+						<h3>Technical decisions</h3>
+
+						<p>
+							Unity engine has been used to develop and design this game. <br />
+							The programming language is C# and multiple programming patterns
+							<br />
+							have been used to implement the gameflow.
+						</p>
+						<p>
+							Singleton pattern has been used to facilitate the communication<br />
+							between the managers such as GameManager, WorkerManager, etc.
+							<br />
+							<br />
+							NavMesh 2d has also been used for pathfinding of workers.
+							<br />
+							<br />
+							State pattern was used to keep track of workers' different states,
+							<br />
+							and Bus Event Pattern was used to notify the managers of <br />
+							different changes during the game.
+						</p>
+
+						<h3>Credits</h3>
+
+						<ul>
+							<li>
+								<span class="bold"> Programming - Game Design - Sound Design: </span>
+								Kamyar Karimi
+							</li>
+							<li>
+								<span class="bold">Art:</span> Keney Free assets -
+								<a href="">link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="carousel" style="display: none">
+					<div class="carousel-track">
+						<img
+							class="carousel-item"
+							src="../../assets/img/chron-head.png"
+							alt="Slide 1"
+						/>
+						<img
+							class="carousel-item"
+							src="../../assets/img/chron-pic-1.png"
+							alt="Slide 2"
+						/>
+						<img
+							class="carousel-item"
+							src="../../assets/img/ds-thumbnail.png"
+							alt="Slide 3"
+						/>
+					</div>
+					<button class="carousel-button prev">‹</button>
+					<button class="carousel-button next">›</button>
+				</div> -->
+			</div>
+		</div>
+
+		<script src="../../src/js/worksPopulator.js"></script>
+		<script>
+			document.addEventListener("mousemove", function (e) {
+				mouse.x = e.clientX;
+				mouse.y = e.clientY;
+			});
+
+			var hydra = new Hydra({
+				canvas: document.getElementById("myCanvas"),
+				detectAudio: false,
+			});
+
+			voronoi(50, 0.2, 10).modulateKaleid(noise(1, 0.01, 500), 0.01).kaleid().out(o0);
+
+			var hydra2 = new Hydra({
+				canvas: document.getElementById("myCanvas2"),
+				detectAudio: false,
+			});
+
+			voronoi(500, 0.2, 1).modulateKaleid(noise(1, 0.01, 5), 0.01).out(o0);
+
+			var hydra3 = new Hydra({
+				canvas: document.getElementById("myCanvas3"),
+				detectAudio: false,
+			});
+
+			voronoi(20, 0.2, 10).modulateKaleid(noise(1, 0.01, 5), 0.01).out(o0);
+
+			// var hydra3 = new Hydra({
+			// 	canvas: document.getElementById("myCanvas4"),
+			// 	detectAudio: false,
+			// });
+
+			// voronoi(20, 0.2, 10)
+			// 	.modulateKaleid(noise(15, 0.01, 5), 0.01)
+			// 	.contrast(() => Math.sin(time) * 5)
+			// 	.out(o0);
+
+			//Carousel stuff
+		</script>
+	</body>
+</html>

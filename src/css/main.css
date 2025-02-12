@@ -1,0 +1,380 @@
+body {
+	/* background-image: url("https://static.dezeen.com/uploads/2020/11/luis-clara-gomes-moullinex-machine-learning-brutalist-music-video-sq.gif?w=640"); */
+	background-color: black;
+	background-size: cover;
+	font-family: "Roboto Mono", monospace;
+	color: white;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+canvas {
+	z-index: -1;
+}
+
+.desc-p {
+	max-width: 700px;
+	line-height: 200%;
+	word-wrap: break-word;
+}
+
+.desc-img {
+	/* margin: auto; */
+	margin-top: 1%;
+	max-width: 700px;
+	/* max-height: 100%; */
+}
+
+.desc-vid {
+	margin: auto;
+}
+
+.container {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.backgroundCanvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+}
+
+.links {
+	padding: 5%;
+	border: 1px solid #742c4c;
+	background-color: #040404;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 14px;
+}
+
+.social-links {
+	margin-top: 2%;
+}
+
+.links a {
+	margin: 1%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	/* padding: 2px 2px; */
+}
+
+.nav-links .nav-link:hover {
+	color: #d4125b;
+	text-decoration: underline;
+}
+
+.social-links .nav-link:hover {
+	color: #d4125b;
+}
+
+.item:hover {
+	color: #d4125b;
+	cursor: pointer;
+}
+
+.avatar {
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 10%;
+}
+
+.avatar:hover {
+	/* animation: crazy-moves 0.2s infinite; */
+	opacity: 90%;
+	box-shadow: red;
+}
+
+/* Works page */
+
+.container2 {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	margin-top: 1%;
+	width: 100%;
+}
+
+.works-container {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: auto;
+	margin-bottom: 3%;
+}
+
+.categories {
+	/* width: 800px; */
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: auto auto auto auto;
+	margin-bottom: 3%;
+}
+
+.category-items {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: auto auto auto auto;
+	margin-bottom: 3%;
+}
+
+.item {
+	padding: 20px;
+}
+
+.item h3 {
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Single work page */
+
+.single-work-container {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+.work-description {
+	display: grid;
+	/* width: 80%; */
+	text-align: justify;
+}
+
+.work-container {
+	align-self: center;
+	background-color: black;
+	/* width: 100%; */
+	padding: 5% 5% 5% 5%;
+}
+
+.work-container img {
+	/* width: 500px;
+	height: 250px; */
+}
+
+#headerPIC {
+	width: 500px;
+	height: 250px;
+}
+
+.work-header {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: auto auto;
+}
+
+.work-header li {
+	margin-bottom: 1%;
+}
+
+.work-header .info {
+	align-self: center;
+}
+
+.info li {
+	list-style: none;
+}
+
+.work-header a:hover {
+	color: #d4125b;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* About page */
+
+.about-container {
+	background-color: black;
+	padding: 5%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.slash-color {
+	color: #d4125b;
+}
+
+#returnCat:hover {
+	color: #d4125b;
+	cursor: pointer;
+}
+
+#returnItem:hover {
+	color: #d4125b;
+	cursor: pointer;
+}
+
+/* Table of contents page */
+
+.table-container {
+	align-content: center;
+	justify-content: center;
+	/* display: grid; */
+	background-color: black;
+	padding: 5%;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.table-container li {
+	margin-bottom: 2%;
+}
+
+.container2 a:hover {
+	color: #d4125b;
+}
+
+/* CAROUSEL! */
+/* CAROUSEL! */
+.carousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 500px;
+	max-height: auto;
+	margin: auto; /* centers the carousel container horizontally */
+	display: flex; /* enables flex centering of its children */
+	align-items: center; /* vertically centers the carousel track */
+	justify-content: center; /* horizontally centers the carousel track */
+}
+
+.carousel-track {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+/* Ensures each image (slide) is a block-level element centered in its container */
+.carousel-item {
+	min-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/* Carousel buttons remain the same */
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.carousel-button.prev {
+	left: 10px;
+}
+
+.carousel-button.next {
+	right: 10px;
+}
+/* Media Query */
+@media only screen and (max-width: 1200px) {
+	.work-header {
+		width: 90%;
+	}
+
+	.about-container {
+		width: 90%;
+	}
+
+	.works-container {
+		grid-template-columns: auto auto;
+	}
+
+	.categories {
+		grid-template-columns: auto auto;
+	}
+
+	.category-items {
+		grid-template-columns: auto auto;
+	}
+
+	.work-header {
+		grid-template-columns: auto;
+	}
+
+	.single-work-container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.categories {
+		grid-template-columns: auto;
+	}
+
+	.work-container {
+		grid-template-columns: auto;
+	}
+	.work-header {
+		grid-template-columns: auto;
+	}
+
+	.category-items {
+		grid-template-columns: auto;
+	}
+}
+
+/* Animations */
+
+@keyframes crazy-moves {
+	0% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -5%);
+	}
+	20% {
+		transform: translate(-10%, 5%);
+	}
+	30% {
+		transform: translate(5%, -10%);
+	}
+	40% {
+		transform: translate(-5%, 15%);
+	}
+	50% {
+		transform: translate(-10%, 5%);
+	}
+	60% {
+		transform: translate(15%, 0);
+	}
+	70% {
+		transform: translate(0, 10%);
+	}
+	80% {
+		transform: translate(-15%, 0);
+	}
+	90% {
+		transform: translate(10%, 5%);
+	}
+	100% {
+		transform: translate(5%, 0);
+	}
+}
