@@ -68,7 +68,6 @@
 			"date": "2021-2022",
 			"links": [
 				["itch", "https://noakishere.itch.io/meanwhile"],
-				["source code", "https://github.com/noakishere/meanwhile-game"],
 				["source code", "https://github.com/noakishere/meanwhile-game"]
 			]
 		}
@@ -96,12 +95,9 @@
 				["../../assets/img/ds2.jpg"],
 				["../../assets/img/ds4.jpg"]
 			],
-			"medium": "Unity, C#",
-			"date": "2022-present",
-			"links": [
-				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
-				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
-			]
+			"medium": "ML, TouchDesigner, Python",
+			"date": "2024",
+			"links": [["website", "https://forum.mutek.org/en/speakers/kamyar-karimi"]]
 		},
 		"desel": {
 			"title": "deconstructed selfies",
@@ -119,10 +115,9 @@
 				]
 			],
 			"medium": "Unity, C#",
-			"date": "2022-present",
+			"date": "2023",
 			"links": [
-				["website", "https://www.lablablab.net//chroniqueur/Chroniqueur/"],
-				["video", "https://youtu.be/D8A9dpITLAU?si=zlgFVj-Y0EipdFk2"]
+				["archive", "https://www.vavgallery.ca/archive/2023/?itemId=c0wtl18i6m0gci7i7apzeftjz45dxk"]
 			]
 		}
 	},
